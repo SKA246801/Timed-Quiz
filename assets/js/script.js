@@ -60,33 +60,30 @@ function getNewQuestion () {
 
 }
 
+
 function answers () {
     console.log(this.value)
-    if (this.value === currentQuestion.answer){
-        score++
-        console.log('correct')
-    } else {
-        console.log('incorrect')
-    }
-    questionCounter++
+
+        if (this.value === currentQuestion.answer){
+            score++
+            console.log('correct')
+        } else {
+            console.log('incorrect')
+        }
+        questionCounter++
     
     console.log(questionCounter)
     if (questionCounter === 5) {
         location.href = "end.html"
         localStorage.setItem('mostRecentScore', score)
-
         getNewQuestion()
     }
     getNewQuestion()
 }
 
-function endGame () {
-
-}
 incrementScore = num => {
     score += num
     scoreTect.innerText = score
 }
-
 
 startGame ()
