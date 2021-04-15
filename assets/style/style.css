@@ -16,6 +16,10 @@ h2 {
     color:rgb(20, 167, 20);
 }
 
+.timer {
+    display: flex;
+    justify-content:left;
+}
 .container {
     width: 100vw;
     height: 100vh;
@@ -49,14 +53,16 @@ p {
     padding-top: 10px;;
     margin-top: 10px;
     text-align: center;
+
 }
 
-a {
+.btn {
+    display: inline;
     font-size: 2.5vw;
     color:black;
     text-decoration: none;
-    padding: 15px 10px;
-    margin: 10px 0px;
+    padding: 15px 20px;
+    margin: 10px 20px;
     background-color: rgb(20, 167, 20);
 }
 
@@ -64,7 +70,7 @@ a {
     box-shadow: 5px 4px 100px 0px rgb(20, 167, 20);
     transition: transform 150ms;
     transform: scale(1.03);
-    
+    cursor: pointer;
 }
 
 .btn[disabled]:hover {
@@ -90,18 +96,25 @@ input {
     border: none;
 }
 
+
 #end {
     padding: 0 50px;
-    background-color: white;
+    
 }
+
 #end-text {
-    padding: 0 50px;
+    margin-bottom: 15px; 
+    width: 400px;
+}
+input {
+    width: 400px;
+    margin-bottom: 10px;
+    outline: none;
     background-color: white;
 }
-
-#username {
-
-}
+/* #username {
+    
+} */
 
 #saveScoreBtn {
     font-size: 2.5vw;
@@ -111,3 +124,4 @@ input {
     margin: 10px 0px;
     background-color: rgb(20, 167, 20);
 }
+
