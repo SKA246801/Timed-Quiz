@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+h1 {
+    font-size: 5vw;
+    color: rgb(20, 167, 20);
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.5vw;
+    margin: 5px;
+    color:rgb(20, 167, 20);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 1vw;
+    color: rgb(20, 167, 20);
+    
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;;
+    margin-top: 10px;
+    text-align: center;
+}
+
+a {
+    font-size: 2.5vw;
+    color:black;
+    text-decoration: none;
+    padding: 15px 10px;
+    margin: 10px 0px;
+    background-color: rgb(20, 167, 20);
+}
+
+.btn:hover {
+    box-shadow: 5px 4px 100px 0px rgb(20, 167, 20);
+    transition: transform 150ms;
+    transform: scale(1.03);
+    
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* End Page CSS */
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50px;
+}
+
+input {
+    margin-bottom: 5px;
+    width: 20px;
+    padding: 15px;
+    font-size: 1.5vw;
+    border: none;
+}
+
+#end {
+    padding: 0 50px;
+    background-color: white;
+}
+#end-text {
+    padding: 0 50px;
+    background-color: white;
+}
+
+#username {
+
+}
+
+#saveScoreBtn {
+    font-size: 2.5vw;
+    color:black;
+    text-decoration: none;
+    padding: 15px 10px;
+    margin: 10px 0px;
+    background-color: rgb(20, 167, 20);
+}
